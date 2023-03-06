@@ -1,0 +1,45 @@
+
+.popup img {
+    @include position(relative, $top: 31%, $left: 37%);
+    max-width: 100%;
+    transform: translate(42%, 19%);
+    transform: scale(1.5);
+
+    @media screen and (max-width: 992px) {
+        left: 26%;
+    }
+    @media screen and (max-width: 700px) {
+        transform: scale(1);
+    }
+    @media screen and (max-width: 500px) {
+        left: 5%;
+        transform: scale(0.7);
+    } 
+
+}
+
+.popup {
+    @include position(fixed, $top: 50%, $left: 50%);
+    @include size(59%, 56vh);
+    display: none;
+    background-color: #c9ccffad;
+    transform: translate(-50%, -50%);
+
+    @media screen and (max-width: 1200px) {
+        background-color: #c9ccff00
+    }
+    @media screen and (max-width: 992px) {
+        width: 72%;
+    }
+    @media screen and (max-width: 768px) {
+        width: 90%;
+    } 
+}
+
+.close {
+    color:  #7781fd;
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+}
+    

@@ -1,0 +1,31 @@
+@mixin pseudo($pos: absolute, $content: '',  $top, $left){
+  content: $content;
+  position: $pos;
+  top: $top;
+  left: $left;
+}
+
+@mixin flexBox($justify_content, $align_items, $gap) {
+  display: flex;
+  justify-content: $justify_content;
+  align-items: $align_items;
+  gap: $gap;
+}
+
+@mixin colors($text, $background, $border) {
+  color: $text;
+  background-color: $background;
+  border-color: $border;
+}
+
+@mixin position($pos, $top, $left) {
+  position: $pos;
+  top: $top;
+  left: $left;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
